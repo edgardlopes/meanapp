@@ -1,0 +1,30 @@
+<div class="jumbotron">
+	<h1 class="text-center">Bem vindo ao Contatooh</h1>
+</div>
+
+<a ng-href="#/contatos/novo" class="btn btn-primary">Novo</a>
+<input type="search" class="form-control" placeholder="Parte do nome" ng-model="criterio">
+<p>Contatos cadastrados {{contatos.length}}</p>
+<div class="alert alert-danger" ng-show="error">
+	{{error}}
+</div>
+<div ng-show="contatos.length > 0" class="table-responsive">
+	<table class="table table-hover">
+		<tr>
+			<th>NOME</th>
+			<th>E-MAIL</th>
+			<th>Emergencia</th>
+			<th class="text-center">AÇÃO</th>
+		</tr>
+		<tr ng-repeat="contato in contatos | filter: criterio">
+			<td><a ng-href="#/contato/{{contato._id}}">{{contato.nome}}</a></td>
+			<td>{{contato.email}}</td>
+			<td>{{contato.emergencia.nome}}</td>
+			<td><button ng-click="removerContato(contato)" class="btn btn-warning">Remover</button></td>
+		</tr>
+	</table>
+</div>
+
+<div class="alert alert-danger" ng-show="contatos.length == 0 && !error">
+	Não há contatos cadastrados!
+</div>

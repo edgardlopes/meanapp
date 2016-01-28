@@ -1,0 +1,4 @@
+Client ID
+    caf328343c79771cbebc
+Client Secret
+    8361c13790f122f3b89e40529e3bdf978c52c37a

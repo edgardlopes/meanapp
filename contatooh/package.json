@@ -1,0 +1,27 @@
+{
+  "name": "contatooh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.1",
+    "ejs": "^2.3.4",
+    "express": "^4.13.4",
+    "express-load": "^1.1.15",
+    "express-session": "^1.13.0",
+    "helmet": "^1.1.0",
+    "method-override": "^2.3.5",
+    "mongo-sanitize": "^1.0.0",
+    "mongodb": "^2.1.4",
+    "mongoose": "^4.3.7",
+    "mongoose-findorcreate": "^0.1.2",
+    "passport": "^0.3.2",
+    "passport-github": "^1.0.0"
+  }
+}
